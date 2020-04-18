@@ -1,0 +1,28 @@
+version: "3"
+services:
+  ws:
+    ports:
+      - "25:25"
+    build:
+      context: ./catchmail-ws
+      dockerfile: Dockerfile
+    environment:
+      - WS_HOST=0.0.0.0
+      - WS_BEHIND_PROXY=yes
+
+  web:
+    build:
+      context: ./catchmail-web
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_TITLE=${TITLE}
+        - REACT_APP_SERVER=ws://${HOST}:${PORT}/ws/
+        - REACT_APP_USE_BROWSER_ROUTER=1
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "${PORT}:80"
+    volumes:
+      - ./conf/nginx:/etc/nginx
+    command: /bin/sh -c "nginx -g \"daemon off;\""
