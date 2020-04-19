@@ -12,6 +12,8 @@ services:
       - WS_HOST=0.0.0.0
       - WS_BEHIND_PROXY=yes
       - LOG_MODE=${LOG_MODE}
+      - AUTH_MODE=${AUTH_MODE}
+      - AUTH_SECRET=${AUTH_SECRET}
 
   web:
     build:
