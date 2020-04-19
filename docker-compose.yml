@@ -6,9 +6,12 @@ services:
     build:
       context: ./catchmail-ws
       dockerfile: Dockerfile
+    volumes:
+      - ./log:/app/log
     environment:
       - WS_HOST=0.0.0.0
       - WS_BEHIND_PROXY=yes
+      - LOG_MODE=${LOG_MODE}
 
   web:
     build:
