@@ -1,6 +1,16 @@
 # catchmail-docker
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mat-sz/catchmail-web/master/screenshot.png" alt="Screenshot">
+</p>
+
 A docker-compose setup for catchmail. Contains: [catchmail-web](https://github.com/mat-sz/catchmail-web), [catchmail-ws](https://github.com/mat-sz/catchmail-ws) and [nginx](http://nginx.org/). This configuration should roughly match the production environment.
+
+**Check other TypeScript e-mail projects:**
+
+| Rendering (React.js)                                   | Rendering (Vue.js)                                 | Parser                                                 | Inbound SMTP                                   |
+| ------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------- |
+| [react-letter](https://github.com/mat-sz/react-letter) | [vue-letter](https://github.com/mat-sz/vue-letter) | [letterparser](https://github.com/mat-sz/letterparser) | [microMTA](https://github.com/mat-sz/microMTA) |
 
 ## Installation
 
