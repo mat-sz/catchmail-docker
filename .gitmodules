@@ -1,6 +1,6 @@
 [submodule "catchmail-web"]
 	path = catchmail-web
-	url = git@github.com:mat-sz/catchmail-web
+	url = https://github.com/mat-sz/catchmail-web
 [submodule "catchmail-ws"]
 	path = catchmail-ws
-	url = git@github.com:mat-sz/catchmail-ws
+	url = https://github.com/mat-sz/catchmail-ws
