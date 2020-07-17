@@ -17,11 +17,11 @@ The SMTP server ([microMTA](https://github.com/mat-sz/microMTA)) is exposed at p
 
 ## Environment variables
 
-| Variable      | Default value | Description                             |
-| ------------- | ------------- | --------------------------------------- |
-| `HOST`        | `localhost`   | Domain/external IP for the application. |
-| `PORT`        | `80`          | Reverse proxy port.                     |
-| `TITLE`       | `catchmail`   | Application title.                      |
-| `AUTH_MODE`   | `none`        | Authentication mode.                    |
-| `AUTH_SECRET` | (empty)       | Authentication secret.                  |
-| `LOG_MODE`    | `none`        | Logging mode.                           |
+| Variable      | Default value | Description                                                              |
+| ------------- | ------------- | ------------------------------------------------------------------------ |
+| `HOST`        | `localhost`   | Domain/external IP for the application.                                  |
+| `PORT`        | `80`          | Reverse proxy port.                                                      |
+| `TITLE`       | `catchmail`   | Application title.                                                       |
+| `AUTH_MODE`   | `none`        | Authentication mode.                                                     |
+| `AUTH_SECRET` | (empty)       | Authentication secret.                                                   |
+| `LOG_MODE`    | `none`        | Logging mode. Set to `file` for the .eml files to be saved into `./log`. |
